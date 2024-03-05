@@ -25,3 +25,9 @@
     if(flags() & ImporterFlag::Verbose) {
         Debug d;
 //bababoy
+ if(flags() & ConverterFlag::Verbose) {
+        Debug d;
+        d << "ShaderTools::AnyConverter::validateData(): using" << plugin;
+        if(plugin != metadata->name())
+            d << "(provided by" << metadata->name() << Debug::nospace << ")";
+    }
