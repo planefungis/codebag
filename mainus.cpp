@@ -19,7 +19,7 @@
         Error{} << "Trade::AnySceneImporter::openFile(): cannot load the" << plugin << "plugin";
         return;
     }
-
+//hello
     const PluginManager::PluginMetadata* const metadata = manager()->metadata(plugin);
     CORRADE_INTERNAL_ASSERT(metadata);
     if(flags() & ImporterFlag::Verbose) {
